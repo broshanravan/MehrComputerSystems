@@ -6,7 +6,7 @@ package main.com.mehr.bl;
 public class User {
   private int userId;
   private String firstname;
-  private String email;  
-  
+  private String surname;
+  private String email;    
   
 }
