@@ -3,8 +3,11 @@ package main.com.mehr.pl;
 /**
  * Created by Behrooz on 15/07/2017.
  */
+<<<<<<< HEAD
 
 @Bean
+=======
+>>>>>>> refs/remotes/origin/master
 public class LoginFotmBean {
     private String userName;
     private String password;
