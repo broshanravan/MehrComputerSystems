@@ -12,7 +12,6 @@
 		<div class="topnav">
 		  <a href="#home">Home</a>
 		  <a href="#news">News</a>
-		  <a href="#contact">Contact</a>
 		  <a href="pages/registeration.jsp">Register</a>
 		  <a  href="pages/about.html">About</a>
 		</div>

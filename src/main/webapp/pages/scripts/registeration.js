@@ -28,7 +28,8 @@
 		title = document.getElementById('title').value; 
 		firstname = document.getElementById('firstname').value;
 	
-		surname = document.getElementById('surname').value;
+		surname = document.getElementById('surname').value;		
+		
 		company = document.getElementById('company').value;
 		 
 		address1 = document.getElementById('address1').value;
@@ -89,9 +90,8 @@
 		 }	
 		
 		if(valid){
-		 swal("Thank you for your enquiery. We have your detayls and will come back to you as soon as possible");
-		 clearAllErrors();
-		 clearAllFields();
+		 name = firstname + " " + surname;
+		 confirmSuccess(title, name);
 		}
 		
 	 }
@@ -115,5 +115,13 @@
 		 
 	 }
 	 
+	  function goHome(){
+        window.location.href = "../index.jsp";    
+	 }
+	 function confirmSuccess(title, name){
+		url =  "confirmation.html?name='" + name+ "'& title='" + title +"'"; 
+		window.location.href =  url;
+	 }
+	
 	
 	 

@@ -2,18 +2,20 @@
 		<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 			<title>Registration</title>			
-				  <link rel="stylesheet" href="pages_style.css"/>	
+				  <link rel="stylesheet" href="pages_style.css"/>
 					<script src="scripts/registeration.js"></script>
 		</head>
 
-	<body background="images\computer.jpg" onload="clearAllErrors()">
-	
+	<body class="body" onload="clearAllErrors()" >
+		
+		
 		<div class="topnav">
 			  <a class="active"href="../index.jsp">Home</a>
 			  <a href="#news">News</a>
 			  <a href="#register">Register</a>
 			  <a class="active" href="about.html">About</a>	
-		</div>
+		</div ">
+				</br>
 				<b><strong>Please insert your details to register with us</strong></b>
 				</br></br>
 				<center>
@@ -43,7 +45,7 @@
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
-								<td><b><label style="color:red;" id="firstnameError">Please insert  your first name: </label></b></td>
+								<td><b><label style="color:red; " id="firstnameError" Please insert  your first name: </label></b></td>
 							</tr>
 							
 							
@@ -53,7 +55,7 @@
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
-								<td><b><label style="color:red;" id="surnameError">Please insert  your first surname</label></b></td>
+								<td><b><label style="color:red; " id="surnameError">Please insert  your first surname</label></b></td>
 							</tr>
 							
 							<tr> 
@@ -72,7 +74,7 @@
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
-								<td><b><label style="color:red; " id ="address1Error">Please insert a valid address</label></b></td>
+								<td><b><label style="color:red; " id ="address1Error" display="none">Please insert a valid address</label></b></td>
 							</tr>
 							
 							<tr>
@@ -81,7 +83,7 @@
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
-								<td><b><label style="color:red;"id ="address2Error">Please insert a complete address</label></b></td>
+								<td><b><label style="color:red; display:none;"id ="address2Error">Please insert a complete address</label></b></td>
 							</tr>
 							
 							<tr>
@@ -99,7 +101,7 @@
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
-								<td><b><label style="color:red;"id="townError">Please insert a town name</label></b></td>
+								<td><b><label style="color:red;  display:none;"id="townError" display="none">Please insert a town name</label></b></td>
 							</tr>
 							
 							<tr>
@@ -108,7 +110,7 @@
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
-								<td><b><label style="color:red; " id="postCodeError">Please insert a valid postcode</label></b></td>
+								<td><b><label style="color:red; display:none;" id="postCodeError">Please insert a valid postcode</label></b></td>
 							</tr>
 							
 							<tr>
@@ -117,7 +119,7 @@
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
-								<td><b><label style="color:red;" id="emailError">Please insert your E-Mail</label></b></td>
+								<td><b><label style="color:red; display:none;" id="emailError">Please insert your E-Mail</label></b></td>
 							</tr>
 							
 							<tr>
@@ -128,9 +130,15 @@
 								<td>&nbsp;</td>
 								<td>&nbsp;</td>
 							</tr>
-																			
-							
+																					
+							<tr>
+								<td></</td>
+								<td></td>
+							</tr>
+						
 					</table>
+					
+					
 					
 					
 					
@@ -142,15 +150,14 @@
 					<table>
 						<tr>
 							<td></td>
-							<td><button id="login" onclick="validateForm()">Register</button></td>
-							<td><button id="clear">Clear</button></td>
-							<td><button id="cancel">Cancel</button></td>
+							<td><button id="register" onclick="validateForm()">Register</button></td>
+							<td><button id="clear"onclick="clearAllFields()">Clear</button></td>
+							<td><button id="cancel"onclick="goHome()">Cancel</button></td>	
 						</tr>
 				
 					</table>							
 								
 				</center>
-					
 				
 	</body>
 
