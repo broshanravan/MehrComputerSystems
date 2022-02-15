@@ -1,14 +1,10 @@
-package main.com.mehr.pl;
+package src.main.com.mehr.pl;
 
 /**
  * Created by Behrooz on 15/07/2017.
  */
-<<<<<<< HEAD
 
-@Bean
-=======
->>>>>>> refs/remotes/origin/master
-public class LoginFotmBean {
+public class RegistrationFormBean {
     private String userName;
     private String password;
 

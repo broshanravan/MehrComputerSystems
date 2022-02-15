@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <jdk.version>1.6</jdk.version>
+    <jdk.version>1.8</jdk.version>
     <spring.version>2.5.6</spring.version>
     <jstl.version>1.2</jstl.version>
     <servletapi.version>2.5</servletapi.version>
@@ -45,9 +45,21 @@
       <version>${servletapi.version}</version>
       <scope>provided</scope>
     </dependency>
-
-
+    <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat -->
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat</artifactId>
+      <version>10.1.0-M8</version>
+      <type>pom</type>
+    </dependency>
   </dependencies>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>ip-172-31-37-131.eu-west-2.compute.internal-snapshots</name>
+      <url>http://13.40.211.100:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+  </distributionManagement>
   <build>
     <finalName>MehrComputerSystems</finalName>
     <plugins>
@@ -86,6 +98,7 @@
           <wtpContextName>spring2</wtpContextName>
         </configuration>
       </plugin>
+
 
     </plugins>
 
