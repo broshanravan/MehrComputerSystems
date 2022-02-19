@@ -52,14 +52,25 @@
       <version>10.1.0-M8</version>
       <type>pom</type>
     </dependency>
+
   </dependencies>
+
   <distributionManagement>
+
+    <repository>
+      <id>central</id>
+      <name>ip-172-31-47-96.eu-west-2.compute.internal-releases</name>
+      <url>http://35.178.180.239:8081/artifactory/libs-release-local</url>
+    </repository>
     <snapshotRepository>
       <id>snapshots</id>
-      <name>ip-172-31-37-131.eu-west-2.compute.internal-snapshots</name>
-      <url>http://13.40.211.100:8081/artifactory/libs-snapshot-local</url>
+      <name>ip-172-31-47-96.eu-west-2.compute.internal-snapshots</name>
+      <url>http://35.178.180.239:8081/artifactory/libs-snapshot</url>
     </snapshotRepository>
   </distributionManagement>
+
+
+
   <build>
     <finalName>MehrComputerSystems</finalName>
     <plugins>
