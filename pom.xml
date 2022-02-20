@@ -60,12 +60,12 @@
     <repository>
       <id>central</id>
       <name>ip-172-31-47-96.eu-west-2.compute.internal-releases</name>
-      <url>http://35.178.180.239:8081/artifactory/libs-release-local</url>
+      <url>http://13.40.184.24:8081/artifactory/libs-release-local</url>
     </repository>
     <snapshotRepository>
       <id>snapshots</id>
       <name>ip-172-31-47-96.eu-west-2.compute.internal-snapshots</name>
-      <url>http://35.178.180.239:8081/artifactory/libs-snapshot</url>
+      <url>http://13.40.184.24:8081/artifactory/libs-snapshot</url>
     </snapshotRepository>
   </distributionManagement>
 
