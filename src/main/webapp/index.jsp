@@ -9,7 +9,7 @@
 	</head>
 
     <body background="pages\images\waves_2.jpg">
-		<div class="topnav">
+		<div class="topNav">
 		  <a href="#home">Home</a>
 		  <a href="#news">News</a>
 		  <a href="pages/registeration.jsp">Register</a>
@@ -72,7 +72,7 @@
 						<ul type="circle">
 			    			<li>Desktop application.</li>
 			    			<li>Custom Built Databases.</li>
-			    			<li>Commercial Web Sites.</li>
+			    			<li>Commercial Websites.</li>
 			    			<li>E-commerce Systems.</li>
 							<li>Network Monitoring Tools.</li>
 							<li>Web & Data Security.</li>
@@ -81,7 +81,7 @@
 					<br/>
 					<b style="color:black">
 					Plus we make sure that your system and code archive is always manageable and adaptable to new needs of the business<br/>
-					and advencements in the technology or changes in market demands and customer needs
+					and advancements in the technology or changes in market demands and customer needs
 					</b>
 				</h2>	
 				

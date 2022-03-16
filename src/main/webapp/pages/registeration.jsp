@@ -7,18 +7,18 @@
 		</head>
 
 	<body class="body" onload="clearAllErrors()" >
+		<form>
 		
-		
-		<div class="topnav">
+		<div class="topNav">
 			  <a class="active"href="../index.jsp">Home</a>
 			  <a href="#news">News</a>
 			  <a href="#register">Register</a>
 			  <a class="active" href="about.html">About</a>	
-		</div ">
+		</div>
 				</br>
 				<b><strong>Please insert your details to register with us</strong></b>
 				</br></br>
-				<center>
+				<div style="text-align: center;">
 					<table class="noselect"id="main_table">
 						
 							<tr>
@@ -45,7 +45,7 @@
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
-								<td><b><label style="color:red; " id="firstnameError" Please insert  your first name: </label></b></td>
+								<td><b><label style="color:red; " id="firstnameError"> Please insert  your first name: </label></b></td>
 							</tr>
 							
 							
@@ -157,7 +157,9 @@
 				
 					</table>							
 								
-				</center>
+				</div>
+
+		</form>
 				
 	</body>
 

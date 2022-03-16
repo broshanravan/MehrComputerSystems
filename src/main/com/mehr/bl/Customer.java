@@ -1,4 +1,4 @@
-package src.main.com.mehr.bl;
+package main.com.mehr.bl;
 
 /**
  * Created by Behrooz on 12/07/2017.

@@ -1,4 +1,4 @@
-package src.main.com.mehr.bl;
+package main.com.mehr.bl;
 
 public class Address {
 

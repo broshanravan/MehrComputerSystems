@@ -1,6 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>MehrComputerSystems</groupId>
   <artifactId>MehrComputerSystems</artifactId>
   <packaging>war</packaging>
@@ -9,7 +11,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <jdk.version>1.8</jdk.version>
+    <jdk.version>1.8.0_311</jdk.version>
     <spring.version>2.5.6</spring.version>
     <jstl.version>1.2</jstl.version>
     <servletapi.version>2.5</servletapi.version>
@@ -39,14 +41,15 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>${spring.version}</version>
+      <version>5.1.3.RELEASE</version>
     </dependency>
 
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
-      <version>${spring.version}</version>
+      <version>5.0.8.RELEASE</version>
     </dependency>
+
 
     <!-- JSTL -->
     <dependency>
@@ -62,6 +65,7 @@
       <version>${servletapi.version}</version>
       <scope>provided</scope>
     </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat -->
     <dependency>
       <groupId>org.apache.tomcat</groupId>
@@ -123,7 +127,6 @@
           <wtpContextName>spring2</wtpContextName>
         </configuration>
       </plugin>
-
     </plugins>
 
   </build>

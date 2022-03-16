@@ -1,13 +1,17 @@
 package main.com.mehr.pl;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class RegistrationController {
 
     @RequestMapping(value = "/sayHello")
-    public void sayHello(){
-        System.out.println("Hello Controller");
+    @ResponseBody
+    public String sayHello(){
+        return("Hello Controller");
+
     }
 }
