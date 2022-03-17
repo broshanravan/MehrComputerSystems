@@ -1,20 +1,21 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 		<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 			<title>Registration</title>			
 				  <link rel="stylesheet" href="pages_style.css"/>
-					<script src="scripts/registeration.js"></script>
+					<script src="scripts/registration.js"></script>
 		</head>
 
 	<body class="body" onload="clearAllErrors()" >
-		<form>
+		<form action="registerCustomer" >
 		
-		<div class="topNav">
-			  <a class="active"href="../index.jsp">Home</a>
-			  <a href="#news">News</a>
-			  <a href="#register">Register</a>
-			  <a class="active" href="about.html">About</a>	
-		</div>
+			<div class="topNav">
+				  <a class="active" href="../index.jsp">Home</a>
+				  <a class="active" href="news.jsp">News</a>
+				  <a href="#register">Register</a>
+				  <a class="active" href="about.html">About</a>
+			</div>
 				</br>
 				<b><strong>Please insert your details to register with us</strong></b>
 				</br></br>
@@ -123,7 +124,7 @@
 							</tr>
 							
 							<tr>
-								<td><b><label>Telehone Number</label></td>
+								<td><b><label>Telephone Number</label></b></td>
 								<td><input type="text" id="tel"/></td>
 							</tr>
 							<tr>
@@ -132,18 +133,12 @@
 							</tr>
 																					
 							<tr>
-								<td></</td>
+								<td></td>
 								<td></td>
 							</tr>
-						
 					</table>
-					
-					
-					
-					
-					
+
 					<b><label VALIGN="top" for="inquiry">Please let us know anout your inquiry:</label></b>
-					
 
 					<textarea id="inquiry" name="inquiry" rows="8" cols="100"></textarea>
 					<br/><br/>

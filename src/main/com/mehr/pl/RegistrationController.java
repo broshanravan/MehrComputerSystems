@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RegistrationController {
 
-    @RequestMapping(value = "/sayHello")
+    @RequestMapping(value = "/registerCustomer")
     @ResponseBody
     public String sayHello(){
-        return("Hello Controller");
+        return("Hello registerCustomer Controller");
 
     }
 }

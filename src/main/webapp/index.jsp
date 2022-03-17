@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 	<head>
-		
-	<link rel="stylesheet" href="pages\styles.css">
+	<link rel="stylesheet" href="pages/index_style.css">
 		<script>
 			var dt = new Date();
 				document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "
@@ -9,15 +8,15 @@
 		</script>
 	</head>
 
-    <body background="pages\images\waves_2.jpg">
+    <body class="body">
 		<div class="topNav">
 		  <a href="#home">Home</a>
-		  <a href="#news">News</a>
-		  <a href="pages/registeration.jsp">Register</a>
-		  <a  href="pages/about.html">About</a>
+		  <a class="active" href="pages/news.jsp">News</a>
+		  <a class="active" href="pages/registration.jsp">Register</a>
+		  <a class="active" href="pages/about.html">About</a>
 		</div>
-		
-			<p id="datetime>"Date/Time:</p>
+
+			<p id="datetime">Date/Time:</p>
 			<table  style="width: 100%;">
 					<tr>
 						<td valign="top">
@@ -35,18 +34,18 @@
 						<td align="center" style="width: 88%;">
 
 							<h1>
-								<p style = "font-family:georgia,garamond,serif;font-size:100;font-style:italic;">
+								<p style = "font-family:georgia,garamond,serif;font-style:italic;">
 								<font size="+75">
 								<strong>Mehr Computer Systems</strong>
 								</font>
-								</p>						
+								</p>
 							</h1>
 						</td>
 						<td  valign="top" align="right" style="width: 100%;">
 							<table>
 								<tr>
 									<td align="right">
-										<l<label><img src="pages\images\Last_cropped_photo.jpg" style="width:140px;height:150px;"></label>
+										<label><img src="pages\images\Last_cropped_photo.jpg" style="width:140px;height:150px;"></label>
 									</td>							
 								</tr>
 								<tr>
