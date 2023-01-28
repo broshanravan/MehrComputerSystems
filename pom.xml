@@ -5,13 +5,13 @@
 
   <groupId>MehrComputerSystems</groupId>
   <artifactId>MehrComputerSystems</artifactId>
-  <packaging>war</packaging>
+
   <version>1.0-SNAPSHOT</version>
   <name>MehrComputerSystems Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
   <properties>
-    <jdk.version>1.8.0_311</jdk.version>
+    <jdk.version>17.0.2</jdk.version>
     <spring.version>2.5.6</spring.version>
     <jstl.version>1.2</jstl.version>
     <servletapi.version>2.5</servletapi.version>
@@ -76,6 +76,7 @@
 
   </dependencies>
 
+
   <distributionManagement>
     <repository>
       <id>central</id>
@@ -88,10 +89,14 @@
       <url>http://13.40.184.24:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
   </distributionManagement>
-
   <build>
-    <finalName>MehrComputerSystems</finalName>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.2</version>
+      </plugin>
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -102,7 +107,7 @@
         </configuration>
       </plugin>
 
-      <!-- embedded jetty, good for testing -->
+       <!--embedded jetty, good for testing -->
       <plugin>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
@@ -115,7 +120,7 @@
         </configuration>
       </plugin>
 
-      <!-- configure Eclipse workspace -->
+       <!--configure Eclipse workspace -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-eclipse-plugin</artifactId>
@@ -128,6 +133,8 @@
         </configuration>
       </plugin>
     </plugins>
-
   </build>
+
+
+
 </project>
