@@ -11,7 +11,7 @@ public class RegistrationController {
     @RequestMapping(value = "/registerCustomer")
     @ResponseBody
     public String sayHello(){
-        return("Hello registerCustomer Controller");
+        return "Hello registerCustomer Controller";
 
     }
 }
