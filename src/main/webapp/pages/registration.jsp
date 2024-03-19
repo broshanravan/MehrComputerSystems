@@ -7,19 +7,27 @@
 					<script src="scripts/registration.js"></script>
 		</head>
 
-	<body class="body" onload="clearAllErrors()" >
-		<form action="registerCustomer" >
+	<body class="body">
+		<form  name="registrationForm" id="registrationForm"  onsubmit="return false;">
 		
 			<div class="topNav">
-				  <a class="active" href="../index.jsp">Home</a>
-				  <a class="active" href="news.jsp">News</a>
-				  <a href="#register">Register</a>
-				  <a class="active" href="about.html">About</a>
+				<a class="index"href="../index.jsp">Home</a>
+				<a href="services.html">Services</a>
+				<a class="news" href="news.html">News</a>
+				<a class="active" href="registration.jsp">Register</a>
+				<a href="about_us.html">About us</a>
+				<a href="contact.html">Our team</a>
 			</div>
 				</br>
-				<b><strong>Please insert your details to register with us</strong></b>
+				<b><strong>Please Let us know about inquiery</strong></b>
 				</br></br>
-				<div style="text-align: center;">
+					
+					
+					<textarea id="inquiry" name="inquiry" rows="8" cols="100"></textarea>
+					<br/><br/>
+					
+				<b><label VALIGN="top" for="inquiry">Please enter your contact detail:</label></b>					
+					<br/><br/>
 					<table class="noselect"id="main_table">
 						
 							<tr>
@@ -32,31 +40,29 @@
 										<option>Miss</option>
 										<option>Ms</option>								
 									</select>							
-								</td>
+									*</td>
+							
+								<td>&nbsp;</td>
+								<td><label style="color:red; display:none;" id="titleError">Please select title</label></td>
 							</tr>
 							
-							<tr>
-								<td>&nbsp;</td>
-								<td><b><label style="color:red; "id="titleError">Please select title </label></b></td>
-							</tr>
+							
 														
 							<tr>
 								<td><b><label>First name: </label></b></td>
 								<td><input type="text" id="firstname" style="lenght:500px;"/>*</td>
-							</tr>
-							<tr>
+							
 								<td>&nbsp;</td>
-								<td><b><label style="color:red; " id="firstnameError"> Please insert  your first name: </label></b></td>
+								<td><label style="color:red; display:none;" id="firstnameError"> Please insert  your first name: </label></td>
 							</tr>
 							
 							
 							<tr>
 								<td><b><label>Surname: </label></b></td>
 								<td><input type="text" id="surname"/>*</td>
-							</tr>
-							<tr>
+							
 								<td>&nbsp;</td>
-								<td><b><label style="color:red; " id="surnameError">Please insert  your first surname</label></b></td>
+								<td><label style="color:red; display:none;" id="surnameError">Please insert  your first surname</label></td>
 							</tr>
 							
 							<tr> 
@@ -72,19 +78,17 @@
 							<tr>
 								<td><b><label>Addresss: </label></b></td>
 								<td><input type="text" id="address1"/>*</td>
-							</tr>
-							<tr>
+							
 								<td>&nbsp;</td>
-								<td><b><label style="color:red; " id ="address1Error" display="none">Please insert a valid address</label></b></td>
+								<td><label style="color:red; display:none;" id ="address1Error" display="none">Please insert a valid address</label></td>
 							</tr>
 							
 							<tr>
 								<td><b><label></label></b></td>
 								<td><input type="text" id="address2"/>*</td>
-							</tr>
-							<tr>
+							
 								<td>&nbsp;</td>
-								<td><b><label style="color:red; display:none;"id ="address2Error">Please insert a complete address</label></b></td>
+								<td><label style="color:red; display:none;"id ="address2Error">Please insert a complete address</label></td>
 							</tr>
 							
 							<tr>
@@ -99,28 +103,25 @@
 							<tr>
 								<td><b><label>Town</label></b></td>
 								<td><input type="text" id="town"/>*</td>
-							</tr>
-							<tr>
+							
 								<td>&nbsp;</td>
-								<td><b><label style="color:red;  display:none;"id="townError" display="none">Please insert a town name</label></b></td>
+								<td><label style="color:red;  display:none;"id="townError" display="none">Please insert a town name</label></td>
 							</tr>
 							
 							<tr>
 								<td><b><label>Post Code</label></b></td>
 								<td><input type="text" id="postCode"/>*</td>
-							</tr>
-							<tr>
+							
 								<td>&nbsp;</td>
-								<td><b><label style="color:red; display:none;" id="postCodeError">Please insert a valid postcode</label></b></td>
+								<td><label style="color:red; display:none;" id="postCodeError">Please insert a valid postcode</label></td>
 							</tr>
 							
 							<tr>
 								<td><b><label>Email</label></b></td>
 								<td><input type="text" id="email"/>*</td>
-							</tr>
-							<tr>
+							
 								<td>&nbsp;</td>
-								<td><b><label style="color:red; display:none;" id="emailError">Please insert your E-Mail</label></b></td>
+								<td><label style="color:red; display:none;" id="emailError">Please insert your E-Mail</label></td>
 							</tr>
 							
 							<tr>
@@ -137,11 +138,6 @@
 								<td></td>
 							</tr>
 					</table>
-
-					<b><label VALIGN="top" for="inquiry">Please let us know anout your inquiry:</label></b>
-
-					<textarea id="inquiry" name="inquiry" rows="8" cols="100"></textarea>
-					<br/><br/>
 					<table>
 						<tr>
 							<td></td>
@@ -150,9 +146,11 @@
 							<td><button id="cancel"onclick="goHome()">Cancel</button></td>	
 						</tr>
 				
-					</table>							
+					</table>
+					
+											
 								
-				</div>
+				
 
 		</form>
 				

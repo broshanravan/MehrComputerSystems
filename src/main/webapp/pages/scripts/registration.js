@@ -1,7 +1,7 @@
 
 	  $(document).ready(
 	  function(){		 
-        clearAllErrors();
+        //clearAllErrors();
 	  });
 	 
 	
@@ -21,7 +21,7 @@
 		document.getElementById('tel').value = "";
 	 }
 		 
-	 
+
 	 function validateForm(){
 		clearAllErrors();
 		
@@ -90,16 +90,48 @@
 		 }	
 		
 		if(valid){
-		 name = firstname + " " + surname;
-		 confirmSuccess(title, name);
+			saveCustomer();
+			confirmSuccess(title, name);
+			clearAllFields();
 		}
 		
-	 }
+		
+		
+		const formJsonData = {
+			firstName:"Bruce",
+			surname: "Roshanravan",
+			email:"broshanravan@hotmail.com",
+			phoneNum:"01452 883309",
+			houseNameNum:"2",
+			addressLine1:"Henlow Drive",
+			addressLine2:"Kingsway",
+			addressLine3:"Quedgley",
+			postCode:"GL2 2DD",
+			town:"Gloucester"
+			
+		};
+
+		  fetch('http://192.168.56.1:8090/mehr/customer/registerCustomer',{
+			method: 'POST',
+			headers: {
+			  'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(formJsonData)
+		  })
+		  .then(resp => {			
+			return resp.json()
+		  })
+		  .then(data => console.log(data))
+		  .catch(error => console.log('error'));
+
+
+	  }
 	 
 	 function clearAllErrors(){
 		 document.getElementById('titleError').style.display = "none"; 
 		 
 		 document.getElementById('firstnameError').style.display = "none";
+		 
 		 document.getElementById('surnameError').style.display = "none";		 
 		 
 		 document.getElementById('address1Error').style.display = "none";
