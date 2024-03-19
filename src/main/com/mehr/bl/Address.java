@@ -10,6 +10,7 @@ public class Address {
     private String postCode;
     private String town;
 
+
     public int getAddressId() {
         return addressId;
     }
